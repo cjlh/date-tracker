@@ -39,7 +39,7 @@ def day_of_date(y, m, d):
     return days[datetime.datetime(y, m, d).weekday()]
 
 
-def print_assignment_details(title, date, color):
+def print_date_details(title, date, color):
     print(terminal_colors[color] + title + ': ' +
           terminal_colors['white'] + time_until(date[0], date[1], date[2]) +
           terminal_colors['normal'] + ' days (' +
@@ -47,18 +47,12 @@ def print_assignment_details(title, date, color):
 
 
 def main():
-    assignments = [
-        ('Digital Communication', (2018, 2, 16), 'blue'),
-        ('Software Engineering', (2018, 2, 23), 'yellow'),
-        ('Group Project (LSEPI)', (2018, 3, 2), 'yellow'),
-        ('Networks and Systems', (2018, 3, 9), 'normal'),
-        ('Computer Graphics', (2018, 3, 16), 'blue'),
-        ('Theory of Computation benchtest', (2018, 3, 12), 'light_red'),
-        ('Systems Programming bechtest', (2018, 3, 13), 'green')
+    dates = [
+        ('Example event', (2345, 6, 7), 'blue'),
     ]
 
-    for assignment in assignments:
-        print_assignment_details(assignment[0], assignment[1], assignment[2])
+    for date in dates:
+        print_date_details(date[0], date[1], date[2])
 
 
 if __name__ == '__main__':
