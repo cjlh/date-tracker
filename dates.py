@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 
-"""assignments.py
+"""dates.py
 
-A script to quickly check deadlines for my assignments.
+A Python script for keeping track of important dates.
+
+https://github.com/cjlh/date-tracker
+
+Usage:
+    $ python dates.py
+
 """
 
 import datetime

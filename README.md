@@ -1,6 +1,8 @@
 # date-tracker
 
-[Description to be written]
+A Python script for keeping track of important dates.
+
+[Further description to be written]
 
 ### Prerequisites
 
@@ -16,12 +18,12 @@ $ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/dates.py
 
 *(Optional)* Set an alias in your shell for quick use. Examples:
 
-For bash (~/.bashrc) and zsh (~/.zshrc):
+bash (\~/.bashrc) and zsh (\~/.zshrc):
 ```
 alias dates="python3 /path/to/dates.py"
 ```
 
-For fish (~/.config/fish/config.fish):
+fish (\~/.config/fish/config.fish):
 ```
 alias dates "python3 /path/to/dates.py"
 ```
