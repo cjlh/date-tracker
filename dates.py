@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
-"""dates.py
+"""A Python script for keeping track of important dates.
 
-A Python script for keeping track of important dates.
-
-https://github.com/cjlh/date-tracker
+File name: dates.py
+Author: Caleb Hamilton
+Date created: 2018-02-05
+Date last modified: 2018-02-05
+License: GNU GPLv3
+Python Version: 3
 
 Usage:
     $ python dates.py
