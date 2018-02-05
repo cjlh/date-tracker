@@ -39,7 +39,7 @@ def day_of_date(y, m, d):
     return days[datetime.datetime(y, m, d).weekday()]
 
 
-def print_date_details(title, date, color):
+def print_event_details(title, date, color):
     print(terminal_colors[color] + title + ': ' +
           terminal_colors['white'] + time_until(date[0], date[1], date[2]) +
           terminal_colors['normal'] + ' days (' +
@@ -47,12 +47,12 @@ def print_date_details(title, date, color):
 
 
 def main():
-    dates = [
+    events = [
         ('Example event', (2345, 6, 7), 'blue'),
     ]
 
-    for date in dates:
-        print_date_details(date[0], date[1], date[2])
+    for event in events:
+        print_event_details(event[0], event[1], event[2])
 
 
 if __name__ == '__main__':
