@@ -34,8 +34,8 @@ def time_until(y, m, d):
 
 
 def day_of_date(y, m, d):
-    days = ["Monday", "Tuesday", "Wednesday", "Thursday",
-            "Friday", "Saturday", "Sunday"]
+    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday',
+            'Friday', 'Saturday', 'Sunday']
     return days[datetime.datetime(y, m, d).weekday()]
 
 
@@ -46,15 +46,20 @@ def print_assignment_details(title, date, color):
           day_of_date(date[0], date[1], date[2]) + ')')
 
 
-assignments = [
-    ('Digital Communication', (2018, 2, 16), 'blue'),
-    ('Software Engineering', (2018, 2, 23), 'yellow'),
-    ('Group Project (LSEPI)', (2018, 3, 2), 'yellow'),
-    ('Networks and Systems', (2018, 3, 9), 'normal'),
-    ('Computer Graphics', (2018, 3, 16), 'blue'),
-    ('Theory of Computation benchtest', (2018, 3, 12), 'light_red'),
-    ('Systems Programming bechtest', (2018, 3, 13), 'green')
-]
+def main():
+    assignments = [
+        ('Digital Communication', (2018, 2, 16), 'blue'),
+        ('Software Engineering', (2018, 2, 23), 'yellow'),
+        ('Group Project (LSEPI)', (2018, 3, 2), 'yellow'),
+        ('Networks and Systems', (2018, 3, 9), 'normal'),
+        ('Computer Graphics', (2018, 3, 16), 'blue'),
+        ('Theory of Computation benchtest', (2018, 3, 12), 'light_red'),
+        ('Systems Programming bechtest', (2018, 3, 13), 'green')
+    ]
 
-for assignment in assignments:
-    print_assignment_details(assignment[0], assignment[1], assignment[2])
+    for assignment in assignments:
+        print_assignment_details(assignment[0], assignment[1], assignment[2])
+
+
+if __name__ == '__main__':
+    main()
