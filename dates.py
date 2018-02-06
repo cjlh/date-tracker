@@ -9,7 +9,6 @@ Python Version: 3
 
 Usage:
     $ python dates.py
-
 """
 
 import datetime
