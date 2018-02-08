@@ -15,10 +15,11 @@ This script requires Python 3.
 
 ### Installation
 
-1. Save dates.py to a location of your choice (this is where you will run the script from):
+1. Save `dates.py` and `events.yaml` to a location of your choice (this is where you will run the script from):
 ```
 $ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/dates.py
-```
+$ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/events.yaml
+``
 
 2. *(Optional)* Set an alias in your shell for quick use. Examples:
 
@@ -42,7 +43,8 @@ alias dates "python3 /path/to/dates.py"
 
 - [ ] Write usage instructions
 - [x] Add support for YAML events file
-- [ ] Rename example 'events.yaml' to 'example_events.yaml' and add support for multiple events files
+- [ ] Rename example `events.yaml` to `example_events.yaml` and add support for multiple events files
+- [ ] Automatically create `events.yaml` on first run and do not require its existence to run
 - [ ] Enable adding events via the program
 - [ ] Write help text
 - [ ] Comprehensively comment code
