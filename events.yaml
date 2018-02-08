@@ -1,0 +1,7 @@
+events:
+  - name: 'Christmas 2018'
+    date: '2018-12-25'
+    color: 'light_red'
+  - name: 'New Year 2019'
+    date: '2019-01-01'
+    color: 'yellow'
