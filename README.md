@@ -10,7 +10,7 @@ A Python script for keeping track of important dates.
 
 ### Dependencies
 
-This script requires Python 3.
+This script requires Python 3 and the [PyYAML](https://pypi.python.org/pypi/PyYAML) module (this may be included by default with your Python 3 installation).
 
 
 ### Installation
