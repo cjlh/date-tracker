@@ -19,7 +19,7 @@ This script requires Python 3.
 ```
 $ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/dates.py
 $ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/events.yaml
-``
+```
 
 2. *(Optional)* Set an alias in your shell for quick use. Examples:
 
