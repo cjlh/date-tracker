@@ -35,7 +35,7 @@ def load_events(filepath):
     """ Loads dates from the given yaml filepath.
 
     Args:
-        filepath (str): The file from which to load the configuration.
+        filepath (str): The file from which to load the events data.
 
     TODO:
         - check given date is valid
@@ -112,10 +112,10 @@ def main():
     try:
         events = load_events('events.yaml')
     except OSError:
-        print('Error: config file does not exist. For instructions on how to use dates.py, please use the \'-h\' flag (\'python dates.py -h\')')
+        print('Error: events file does not exist. For instructions on how to use dates.py, please use the \'-h\' flag (\'python dates.py -h\')')
         exit()
     except ValueError:
-        print('Error: invalid config file format. For instructions on how to use dates.py, please use the \'h\' flag (\'python dates.py -h\')')
+        print('Error: invalid events file format. For instructions on how to use dates.py, please use the \'h\' flag (\'python dates.py -h\')')
         exit()
     # Loop through events and print the details of each
     for event in events:
