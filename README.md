@@ -16,22 +16,31 @@ This script requires Python 3.
 ### Installation
 
 1. Save `dates.py` and `events.yaml` to a location of your choice (this is where you will run the script from):
-```
-$ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/dates.py
-$ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/events.yaml
-```
+
+    ```
+    $ git clone https://github.com/cjlh/date-tracker.git /path/to/desired/directory
+    ```
+
+   *Or:*
+
+    ```
+    $ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/dates.py
+    $ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/events.yaml
+    ```
 
 2. *(Optional)* Set an alias in your shell for quick use. Examples:
 
-bash (\~/.bashrc) and zsh (\~/.zshrc):
-```
-alias dates="python3 /path/to/dates.py"
-```
+   bash (\~/.bashrc) and zsh (\~/.zshrc):
 
-fish (\~/.config/fish/config.fish):
-```
-alias dates "python3 /path/to/dates.py"
-```
+    ```
+    alias dates="python3 /path/to/dates.py"
+    ```
+
+   fish (\~/.config/fish/config.fish):
+
+    ```
+    alias dates "python3 /path/to/dates.py"
+    ```
 
 
 ## Use
