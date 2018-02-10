@@ -15,6 +15,10 @@ Usage:
 import datetime
 import yaml
 import sys
+import os
+
+__version__ = '1.0'
+__author__ = 'Caleb Hamilton (cjlh)'
 
 
 terminal_colors = {
@@ -47,6 +51,7 @@ def load_events(filepath):
             events_dict = yaml.safe_load(events_file)
         except yaml.YAMLError as yaml_e:
             raise ValueError('Error in \'events.yaml\' file')
+    # Populate events list using dict from YAML file
     events_list = []
     for event in events_dict['events']:
         events_list.append((event['name'], event['date'], event['color']))
@@ -103,7 +108,19 @@ def print_event_details(name, date_string, color):
 def help():
     """ Prints out instructions on how to use this script.
     """
-    print('TODO')
+    current_dir = os.path.dirname(os.path.realpath(__file__))
+    print('dates.py version ' + __version__ + ' by ' + __author__ + '.' + '\n')
+    print('To configure events, modify or create the file \'events.yaml\' in' + '\n' +
+          'the same directory as this script. This seems to be:')
+    print(current_dir + '\n')
+    print('Events are defined in the YAML language (http://yaml.org/), with' + '\n' +
+          'all events being list items under one list named \'events\'. Each' + '\n' +
+          'list item should be a dictionary with the properties:')
+    print('* name')
+    print('* date')
+    print('* color' + '\n')
+    print('For more information and an example events file, see the GitHub' + '\n' +
+          'at https://github.com/cjlh/date-tracker')
 
 
 def main():
@@ -112,10 +129,12 @@ def main():
     try:
         events = load_events('events.yaml')
     except OSError:
-        print('Error: events file does not exist. For instructions on how to use dates.py, please use the \'-h\' flag (\'python dates.py -h\')')
+        print('Error: events file does not exist. For instructions on how to \
+              use dates.py, please use the \'-h\' flag (\'python dates.py -h\')')
         exit()
     except ValueError:
-        print('Error: invalid events file format. For instructions on how to use dates.py, please use the \'h\' flag (\'python dates.py -h\')')
+        print('Error: invalid events file format. For instructions on how to \
+              use dates.py, please use the \'h\' flag (\'python dates.py -h\')')
         exit()
     # Loop through events and print the details of each
     for event in events:
