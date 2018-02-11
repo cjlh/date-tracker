@@ -105,7 +105,7 @@ def print_event_details(name, date_string, color):
           day_of_date(date_string) + ')')
 
 
-def help():
+def program_help():
     """ Prints out instructions on how to use this script.
     """
     current_dir = os.path.dirname(os.path.realpath(__file__))
@@ -143,6 +143,6 @@ def main():
 
 if __name__ == '__main__':
     if (len(sys.argv) == 2 and sys.argv[1] == '-h'):
-        help()
+        program_help()
     else:
         main()
