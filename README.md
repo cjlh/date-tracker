@@ -55,7 +55,7 @@ This script requires Python 3 and the [PyYAML](https://pypi.python.org/pypi/PyYA
 - [ ] Add screenshot
 - [ ] Write usage instructions
 - [x] Add support for YAML events file
-- [ ] * Add support for categories
+- [ ] * Add support for categories (with the ability to view only one list using command line args)
 - [ ] Append date to day - i.e. "(Thursday)" -> "(Thursday 10th March)"
 - [ ] Rename example `events.yaml` to `example_events.yaml` and add support for multiple events files
 - [ ] Automatically create `events.yaml` on first run and do not require its existence to run
