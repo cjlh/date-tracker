@@ -20,6 +20,8 @@ import os
 __version__ = '1.0'
 __author__ = 'Caleb Hamilton (cjlh)'
 
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+
 
 terminal_colors = {
     'blue': '\033[34m',
@@ -108,11 +110,10 @@ def print_event_details(name, date_string, color):
 def program_help():
     """ Prints out instructions on how to use this script.
     """
-    current_dir = os.path.dirname(os.path.realpath(__file__))
     print('dates.py version ' + __version__ + ' by ' + __author__ + '.' + '\n')
     print('To configure events, modify or create the file \'events.yaml\' in' + '\n' +
           'the same directory as this script. This seems to be:')
-    print(current_dir + '\n')
+    print(SCRIPT_DIR + '\n')
     print('Events are defined in the YAML language (http://yaml.org/), with' + '\n' +
           'all events being list items under one list named \'events\'. Each' + '\n' +
           'list item should be a dictionary with the properties:')
@@ -127,14 +128,14 @@ def main():
     """ The main program function.
     """
     try:
-        events = load_events('events.yaml')
+        events = load_events(SCRIPT_DIR + '/events.yaml')
     except OSError:
-        print('Error: events file does not exist. For instructions on how to \
-              use dates.py, please use the \'-h\' flag (\'python dates.py -h\')')
+        print('Error: events file does not exist. For instructions on how to ' +
+              'use dates.py, please use the \'-h\' flag (\'python dates.py -h\')')
         exit()
     except ValueError:
-        print('Error: invalid events file format. For instructions on how to \
-              use dates.py, please use the \'h\' flag (\'python dates.py -h\')')
+        print('Error: invalid events file format. For instructions on how to ' +
+              'use dates.py, please use the \'h\' flag (\'python dates.py -h\')')
         exit()
     # Loop through events and print the details of each
     for event in events:
