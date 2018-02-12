@@ -50,8 +50,10 @@ This script requires Python 3 and the [PyYAML](https://pypi.python.org/pypi/PyYA
 
 ## TODO
 
+- [ ] Add screenshot
 - [ ] Write usage instructions
 - [x] Add support for YAML events file
+- [ ] * Add support for categories
 - [ ] Rename example `events.yaml` to `example_events.yaml` and add support for multiple events files
 - [ ] Automatically create `events.yaml` on first run and do not require its existence to run
 - [ ] Enable adding events via the program
