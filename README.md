@@ -28,7 +28,7 @@ This script requires Python 3 and the [PyYAML](https://pypi.python.org/pypi/PyYA
     $ wget https://raw.githubusercontent.com/cjlh/date-tracker/master/events.example.yaml
     ```
 
-2. Rename `events.example.yaml` to `events.yaml` and add your own event details (see ['Use' section](#use) for more details).
+2. Rename `events.example.yaml` to `events.yaml` and add your own event details (see ['Use' section](#Use) for more details).
 
 3. *(Optional)* Set an alias in your shell for quick use. Examples:
 
@@ -56,6 +56,7 @@ This script requires Python 3 and the [PyYAML](https://pypi.python.org/pypi/PyYA
 - [ ] Write usage instructions
 - [x] Add support for YAML events file
 - [ ] * Add support for categories
+- [ ] Append date to day - i.e. "(Thursday)" -> "(Thursday 10th March)"
 - [ ] Rename example `events.yaml` to `example_events.yaml` and add support for multiple events files
 - [ ] Automatically create `events.yaml` on first run and do not require its existence to run
 - [ ] Enable adding events via the program
